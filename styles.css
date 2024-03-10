@@ -1,0 +1,90 @@
+body{
+    background-color: #c4d4e9;
+}
+
+.container{
+    display: flex;
+    margin-left: 34px;
+}
+
+.textarea{
+    width: 760px;
+    height: 48px;
+    background: none;
+    border: none;
+    font-family: system-ui;
+    font-size: 20px
+
+}
+
+.area-encriptado input:focus{
+    outline:none
+}
+
+.cont-btns{
+    width: 369px;
+    height: 62px;
+    margin-top: 475px;
+    margin-left: 153px;
+}
+
+.area-encriptado{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 585px;
+}
+
+.btn-encriptar{
+    width: 180px;
+    height: 47px;
+    border-radius: 20px;
+    background-color: #346c9b;
+    color: white;
+    border-color: #346c9b;
+}
+
+.btn-desencriptar{
+    width: 180px;
+    height: 47px;
+    border-radius: 20px;
+    color: #346c9b;
+    border-color: #346c9b;
+}
+
+.mensajes{
+    background-color: white;
+    width: 300px;
+    height: 595px;
+    margin-left: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensajes img{
+    margin-left: 111px;
+}
+
+.mensajes h1, h3{
+    text-align: center;
+    font-family: system-ui;
+    color: #346c9b;
+}
+
+.btn-copy{
+    width: 180px;
+    height: 47px;
+    border-radius: 20px;
+    background-color: #346c9b;
+    color: white;
+    border-color: #346c9b;
+    margin-top: 524px;
+    margin-left: 22px;
+    position: absolute;
+}
+
+.txt-mensajes{
+    margin-top: 145px;
+} 
