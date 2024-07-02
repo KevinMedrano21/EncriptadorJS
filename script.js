@@ -18,9 +18,15 @@ function encriptar() {
     img.style.display = "none"
     h2.style.display = "none";
     h3.innerHTML = resultado;
-
-
+    limpiarTexto();
+    
 }
+
+function limpiarTexto(){
+    document.getElementById("input").value = "";
+}
+
+
 
 //Funcion para visualizar mensaje
 function visualizarMensaje(){
@@ -48,6 +54,7 @@ function desencriptar(){
     img.style.display = "none"
     h2.style.display = "none";   
     h3.innerHTML = resultado;
+    limpiarTexto();
 }
 
 
