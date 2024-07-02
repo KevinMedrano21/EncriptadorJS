@@ -1,36 +1,6 @@
-// function encriptar() {
-//     texto = document.getElementById("input").value;
 
-//     if (texto.includes("e")) {
-//         enter = texto.replace(/e/g, "enter");
-//         console.log(enter);
-//     }
-//     else if (texto.includes("i")) {
-//         imes = texto.replace(/i/g, "imes");
-//         console.log(imes);
-//     }
-//     else if (texto.includes("a")) {
-//         ai = texto.replace(/a/g, "ia");
-//         console.log(ai);
-//     }
-//     else if (texto.includes("o")) {
-//         ober = texto.replace(/o/g, "ober");
-//         console.log(ober);
-//     }
-//     else if (texto.includes("u")) {
-//         utaf = texto.replace(/u/g, "utaf");
-//         console.log();
-//     }
-//     else{
-//         console.log("El texto que ingreso no es valido.")
-//     }
 
-//     console.log(texto);
-    
-    
-    
-// }
-
+//Funcion para encriptar
 function encriptar() {
     texto = document.getElementById("input").value;
 
@@ -52,6 +22,7 @@ function encriptar() {
 
 }
 
+//Funcion para visualizar mensaje
 function visualizarMensaje(){
     if(resultado == true){
         let h1 = document.querySelector("h1");
@@ -59,6 +30,7 @@ function visualizarMensaje(){
     }
 }
 
+//Funcion para desencriptar
 function desencriptar(){
     texto = document.getElementById("input").value;
 
@@ -76,4 +48,13 @@ function desencriptar(){
     img.style.display = "none"
     h1.style.display = "none";   
     h3.innerHTML = resultado;
+}
+
+
+//Funcion para copiar el texto
+function copiarTexto(){
+    let texto = document.getElementById("texto").innerText;
+    navigator.clipboard.writeText(texto).then(() => {
+        alert("Texto copiado!");
+    });
 }

@@ -1,90 +1,178 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #c4d4e9;
+    font-family: system-ui, sans-serif;
 }
 
-.container{
-    display: flex;
-    margin-left: 34px;
-}
-
-.textarea{
-    width: 760px;
-    height: 48px;
-    background: none;
-    border: none;
-    font-family: system-ui;
-    font-size: 20px
-
-}
-
-.area-encriptado input:focus{
-    outline:none
-}
-
-.cont-btns{
-    width: 369px;
-    height: 62px;
-    margin-top: 475px;
-    margin-left: 153px;
-}
-
-.area-encriptado{
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    height: 585px;
-}
-
-.btn-encriptar{
-    width: 180px;
-    height: 47px;
-    border-radius: 20px;
-    background-color: #346c9b;
-    color: white;
-    border-color: #346c9b;
-}
-
-.btn-desencriptar{
-    width: 180px;
-    height: 47px;
-    border-radius: 20px;
-    color: #346c9b;
-    border-color: #346c9b;
-}
-
-.mensajes{
-    background-color: white;
-    width: 300px;
-    height: 595px;
-    margin-left: 5px;
-    border-radius: 20px;
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.mensajes img{
-    margin-left: 111px;
+.textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 48px;
+    background: none;
+    border: 2px solid #346c9b;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
 }
 
-.mensajes h1, h3{
-    text-align: center;
-    font-family: system-ui;
+.area-encriptado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.cont-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+    width: 48%;
+    height: 47px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-encriptar {
+    background-color: #346c9b;
+    color: white;
+    border: none;
+}
+
+.btn-desencriptar {
+    background-color: white;
+    color: #346c9b;
+    border: 2px solid #346c9b;
+}
+
+.sub-txt2{
+    color: #346c9b;
+
+}
+
+.sub-txt3{
     color: #346c9b;
 }
 
-.btn-copy{
-    width: 180px;
-    height: 47px;
-    border-radius: 20px;
-    background-color: #346c9b;
-    color: white;
-    border-color: #346c9b;
-    margin-top: 524px;
-    margin-left: 22px;
-    position: absolute;
+.cont-btns-mns {
+    width: 100%;
+    height: 30%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px ;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.25);
+    text-align: center;
 }
 
-.txt-mensajes{
-    margin-top: 145px;
-} 
+.cont-btns-mns img{
+    max-width: 100%;
+    height: auto;
+}
+
+.cont-btns-mns h1 h2{ 
+    color: #346c9b;
+    margin: 10px 0;
+}
+
+.mensajes {
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    
+}
+
+.mensajes img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mensajes h1,
+.mensajes h3 {
+    color: #346c9b;
+    margin: 10px 0;
+}
+
+.btn-copy {
+    width: 100%;
+    max-width: 600px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #346c9b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.txt-mensaje h1 h3{
+    color: #346c9b;
+    margin: 10px 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .cont-btns-mns{
+        width: 45%;
+        height: 80vh;
+        align-content: center;
+    }
+
+
+    .area-encriptado{
+        width: 45%;
+    }
+    .cont-btns-mns {
+        width: 45%;
+        height: 90vh;
+    }
+
+    .btn-copy{
+        margin-top: 60%;
+        width: 65%;
+    }
+
+    .mensajes {
+        height: auto;
+        min-height: 80vh;
+        width: auto;
+    }
+
+    
+}
+
+@media(min-width: 768px) {
+    .cont-btns{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: 80vh;
+        align-items: end;
+    }
+}
