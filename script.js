@@ -12,11 +12,11 @@ function encriptar() {
 
     console.log(resultado);
 
-    let h1 = document.querySelector("h1");
+    let h2 = document.querySelector("h2");
     let h3 = document.querySelector("h3");
     let img = document.querySelector("img")
     img.style.display = "none"
-    h1.style.display = "none";
+    h2.style.display = "none";
     h3.innerHTML = resultado;
 
 
@@ -25,8 +25,8 @@ function encriptar() {
 //Funcion para visualizar mensaje
 function visualizarMensaje(){
     if(resultado == true){
-        let h1 = document.querySelector("h1");
-        h1.innerHTML = resultado;
+        let h2 = document.querySelector("h2");
+        h2.innerHTML = resultado;
     }
 }
 
@@ -42,11 +42,11 @@ function desencriptar(){
 
     console.log(resultado);
 
-    let h1 = document.querySelector("h1");
+    let h2 = document.querySelector("h2");
     let h3 = document.querySelector("h3");
     let img = document.querySelector("img")
     img.style.display = "none"
-    h1.style.display = "none";   
+    h2.style.display = "none";   
     h3.innerHTML = resultado;
 }
 
