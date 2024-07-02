@@ -92,27 +92,7 @@ body {
     margin: 10px 0;
 }
 
-.mensajes {
-    background-color: white;
-    width: auto;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px;
 
-    
-}
-
-.mensajes img {
-    max-width: 100%;
-    height: auto;
-}
-
-.mensajes h1,
-.mensajes h3 {
-    color: #346c9b;
-    margin: 10px 0;
-}
 
 .btn-copy {
     width: 100%;
